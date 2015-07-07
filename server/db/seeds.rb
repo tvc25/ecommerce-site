@@ -5,3 +5,52 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Customer.delete_all
+Order.delete_all
+Product.delete_all
+Profile.delete_all
+OrderProduct.delete_all
+
+
+# Create customer objects
+c1 = Customer.create(first_name: 'Don', last_name: 'Draper')
+c2 = Customer.create(first_name: 'Burt', last_name: 'Cooper')
+c3 = Customer.create(first_name: 'Lane', last_name: 'Price')
+
+
+
+# Create products objects
+p1 = Product.create(name: 'MacBook Pro')
+p2 = Product.create(name: 'Mac Pro')
+p3 = Product.create(name: 'MacBook Air')
+p4 = Product.create(name: 'Yam')
+
+# Method 1
+o1 = c1.orders.create(order_reference: 'fd5skfjh', amount: 500)
+o2 = c2.orders.create(order_reference: 'fd5sk2jh', amount: 400)
+o3 = c3.orders.create(order_reference: 'fd5sk3jh', amount: 200)
+
+
+# Method 2
+# Order.create(order_reference: 'f4ds5fjh', amount: 300, customer_id: c2.id)
+# Method 3
+o3 = Order.create(order_reference: 'fds5kfjh', amount: 500)
+o3.customer_id = c1.id
+o3.save
+
+# Assign products to orders - creating order_product objects and saving them to the database
+
+o1.order_products.create(product_id: p1.id)
+o1.order_products.create(product_id: p3.id)
+o2.order_products.create(product_id: p2.id)
+
+p1.order_products.create(order_id: o3.id)
+
+# Creating a profile object and assigning to a customer
+
+# Method 1
+pr1 = Profile.create(email:'tobiacassandro@gmail.com')
+pr1.customer_id = c2.id
+pr1.save
+# Method 2
+pr2 = Profile.create(email:'cloecassandro@gmail.com', customer_id: c3.id)
