@@ -13,17 +13,15 @@ OrderProduct.delete_all
 
 
 # Create customer objects
-c1 = Customer.create(first_name: 'Don', last_name: 'Draper')
-c2 = Customer.create(first_name: 'Burt', last_name: 'Cooper')
-c3 = Customer.create(first_name: 'Lane', last_name: 'Price')
-
-
+c1 = Customer.create(first_name: 'Don', last_name: 'Draper', first_line: "17 Woronzow Road", second_line: "St John's Wood", city: "London", postCode: "NW8 6BA")
+c2 = Customer.create(first_name: 'Burt', last_name: 'Cooper', first_line: "17 Woronzow Road", second_line: "St John's Wood", city: "London", postCode: "NW8 6BA")
+c3 = Customer.create(first_name: 'Lane', last_name: 'Price', first_line: "17 Woronzow Road", second_line: "St John's Wood", city: "London", postCode: "NW8 6BA")
 
 # Create products objects
-p1 = Product.create(name: 'MacBook Pro')
-p2 = Product.create(name: 'Mac Pro')
-p3 = Product.create(name: 'MacBook Air')
-p4 = Product.create(name: 'Yam')
+p1 = Product.create(name: 'MacBook Pro', category: "Electronics")
+p2 = Product.create(name: 'Mac Pro', category: "Electronics")
+p3 = Product.create(name: 'MacBook Air', category: "Electronics")
+p4 = Product.create(name: 'iPhone', category: "Electronics")
 
 # Method 1
 o1 = c1.orders.create(order_reference: 'fd5skfjh', amount: 500)
@@ -43,7 +41,6 @@ o3.save
 o1.order_products.create(product_id: p1.id)
 o1.order_products.create(product_id: p3.id)
 o2.order_products.create(product_id: p2.id)
-
 p1.order_products.create(order_id: o3.id)
 
 # Creating a profile object and assigning to a customer
