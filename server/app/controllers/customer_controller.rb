@@ -1,7 +1,16 @@
 class CustomerController < ApplicationController
   def index
-  customers = Customer.all.order(:id)
-  render json: customers
-  binding.pry
-end
+  end
+
+  def create
+  end
+
+  def show
+  end
+
+  def update
+  end
+
+  def destroy
+  end
 end
