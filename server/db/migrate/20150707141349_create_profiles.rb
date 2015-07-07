@@ -2,7 +2,7 @@ class CreateProfiles < ActiveRecord::Migration
   def change
     create_table :profiles do |t|
       t.string :email
-      t.string :customer_id
+      t.integer :customer_id
       t.string :twitter
       t.string :facebook
 
