@@ -14,6 +14,7 @@ gem 'thin'
 gem 'rails_admin'
 gem 'rails_12factor'
 gem 'stripe'
+gem 'devise'
 
 group :development, :test do
 
