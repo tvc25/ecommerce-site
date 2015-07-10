@@ -1,53 +1,10 @@
 Rails.application.routes.draw do
-  get 'order/index'
+  resources :products
+  resources :customers
+  resources :orders
+  resources :order_products
 
-  get 'order/create'
-
-  get 'order/show'
-
-  get 'order/update'
-
-  get 'order/destroy'
-
-  get 'product/index'
-
-  get 'product/create'
-
-  get 'product/show'
-
-  get 'product/update'
-
-  get 'product/destroy'
-
-  get 'profile/index'
-
-  get 'profile/create'
-
-  get 'profile/show'
-
-  get 'profile/update'
-
-  get 'profile/destroy'
-
-  get 'order/index'
-
-  get 'order/create'
-
-  get 'order/show'
-
-  get 'order/update'
-
-  get 'order/destroy'
-
-  get 'customer/index'
-
-  get 'customer/create'
-
-  get 'customer/show'
-
-  get 'customer/update'
-
-  get 'customer/destroy'
+  root 'customer#index'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # The priority is based upon order of creation: first created -> highest priority.
