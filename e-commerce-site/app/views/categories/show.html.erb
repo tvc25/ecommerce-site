@@ -1,2 +1,10 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+<h2>Category show</h2>
+
+<ul>
+  <% @category.products.each do |product| %>
+    <li>
+      <%= link_to(product.name, type_products_path(product.id))  %>
+    <%= image_tag(product.img) %>
+      </li>
+  <% end %>
+</ul>
