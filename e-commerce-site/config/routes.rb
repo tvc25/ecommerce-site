@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'order_products/create'
+
+  get 'order_products/update'
+
+  get 'order_products/destroy'
+
   get 'carts/show'
   resource :cart, only: [:show]
   resources :users
