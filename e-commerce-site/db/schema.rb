@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150713125304) do
+=======
+ActiveRecord::Schema.define(version: 20150713132711) do
+>>>>>>> development
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,11 +55,29 @@ ActiveRecord::Schema.define(version: 20150713125304) do
     t.integer  "order_reference"
     t.integer  "amount"
     t.string   "customer_id"
+<<<<<<< HEAD
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.integer  "product_id"
   end
 
+=======
+    t.datetime "created_at",                                  null: false
+    t.datetime "updated_at",                                  null: false
+    t.integer  "product_id"
+    t.string   "AddTaxToOrder"
+    t.string   "AddShippingToOrder"
+    t.string   "AddTotalToOrder"
+    t.decimal  "subtotal",           precision: 12, scale: 3
+    t.decimal  "tax",                precision: 12, scale: 3
+    t.decimal  "shipping",           precision: 12, scale: 3
+    t.decimal  "total",              precision: 12, scale: 3
+    t.integer  "order_status_id"
+  end
+
+  add_index "orders", ["order_status_id"], name: "index_orders_on_order_status_id", using: :btree
+
+>>>>>>> development
   create_table "products", force: :cascade do |t|
     t.string   "name"
     t.string   "tag"
@@ -95,4 +117,8 @@ ActiveRecord::Schema.define(version: 20150713125304) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+<<<<<<< HEAD
+=======
+  add_foreign_key "orders", "order_statuses"
+>>>>>>> development
 end
