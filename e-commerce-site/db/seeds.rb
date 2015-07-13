@@ -53,3 +53,10 @@ pr1.customer_id = c2.id
 pr1.save
 # Method 2
 pr2 = Profile.create(email:'cloecassandro@gmail.com', customer_id: c3.id)
+
+OrderStatus.delete_all
+
+OrderStatus.create! id: 1, name: "In Progress"
+OrderStatus.create! id: 2, name: "Placed"
+OrderStatus.create! id: 3, name: "Shipped"
+OrderStatus.create! id: 4, name: "Cancelled"
