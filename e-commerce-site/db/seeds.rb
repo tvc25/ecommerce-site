@@ -10,24 +10,26 @@ Order.delete_all
 Product.delete_all
 Profile.delete_all
 OrderProduct.delete_all
-
+Category.delete_all
 
 # Create customer objects
 c1 = Customer.create(first_name: 'Don', last_name: 'Draper', first_line: "17 Woronzow Road", second_line: "St John's Wood", city: "London", postCode: "NW8 6BA")
 c2 = Customer.create(first_name: 'Burt', last_name: 'Cooper', first_line: "17 Woronzow Road", second_line: "St John's Wood", city: "London", postCode: "NW8 6BA")
 c3 = Customer.create(first_name: 'Lane', last_name: 'Price', first_line: "17 Woronzow Road", second_line: "St John's Wood", city: "London", postCode: "NW8 6BA")
 
+# Create Category
+ct1 = Category.create!(name: 'Electronics')
+
 # Create products objects
-p1 = Product.create(name: 'MacBook Pro', category: "Electronics")
-p2 = Product.create(name: 'Mac Pro', category: "Electronics")
-p3 = Product.create(name: 'MacBook Air', category: "Electronics")
-p4 = Product.create(name: 'iPhone', category: "Electronics")
+p1 = Product.create(name: 'MacBook Pro')
+p2 = Product.create(name: 'Mac Pro')
+p3 = Product.create(name: 'MacBook Air')
+p4 = Product.create(name: 'iPhone')
 
 # Method 1
 o1 = c1.orders.create(order_reference: 'fd5skfjh', amount: 500)
 o2 = c2.orders.create(order_reference: 'fd5sk2jh', amount: 400)
 o3 = c3.orders.create(order_reference: 'fd5sk3jh', amount: 200)
-
 
 # Method 2
 # Order.create(order_reference: 'f4ds5fjh', amount: 300, customer_id: c2.id)

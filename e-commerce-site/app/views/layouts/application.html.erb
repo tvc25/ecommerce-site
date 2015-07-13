@@ -7,12 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <nav class="global-nav">
+  <div class="container">
+    <div class="brand">
+      <a href="/">
+        <span>Cassandro</span>London
+      </a>
+    </div>
+    <div class="global-menu">
+
+      <ul>
+          <li><a href="/">Search </a><input type="text" id="searchBox" /></li>
+          <li><a href="/Categories">Categories</a></li>
+          <li><a href="/login">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
   <p class="notice"><%= notice %></p>
          <p class="alert"><%= alert %></p>
          <h1>Homepage</h1>
-<form>
-  <p>Search <input type="text" id="searchBox" /></p>
-</form>
+
 <%= yield %>
 
 </body>

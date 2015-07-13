@@ -1,0 +1,125 @@
+/***GLOBAL****/
+
+.container {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.white-section {
+  background-color: rgba(229,229,229,1);
+  height: 100%;
+}
+
+body, html {
+  height: 100%;
+}
+
+/********GRIDS*********/
+
+.box {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+}
+
+.box-1 {
+  width: 10%;
+}
+
+.box-2 {
+  width: 20%;
+}
+
+.box-3 {
+  width: 30%;
+}
+
+.box-4 {
+  width: 40%;
+}
+
+.box-5 {
+  width: 50%;
+}
+
+.box-6 {
+  width: 60%;
+}
+
+.box-7 {
+  width: 70%;
+}
+
+.box-8 {
+  width: 80%;
+}
+
+.box-9 {
+  width: 90%;
+}
+
+.box-10 {
+  width: 100%;
+}
+
+
+/****NAV*****/
+
+.global-nav {
+  height: 61px;
+  background-color: rgba(59,68,75,1);
+}
+
+.global-nav a {
+  font-size:14px;
+}
+
+.global-menu {
+  display: inline-block;
+  float: right;
+}
+
+.global-menu ul {
+  list-style: none;
+  padding-left: 0px;
+  padding: 2px 0;
+}
+
+.global-menu ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.global-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  letter-spacing: .8px;
+  font-size: 12px;
+}
+
+.global-menu .btn {
+  font-size: 14px;
+  padding: 8px;
+}
+
+.brand  a {
+  display: inline-block;
+  float: left;
+  padding: 14px 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.brand a span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
