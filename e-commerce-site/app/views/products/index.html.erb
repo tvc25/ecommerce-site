@@ -7,7 +7,7 @@
    <div class="indivi_product" id="draggable">
      <%#= image_tag product.img %>
       <%= product.name %>
-      <%= number_to_currency product.price %>GBP
+      <%= number_to_currency product.price %>
       <%= render :partial => 'product_info', :locals => {product:product} %>
     </div>
   <% end %>
