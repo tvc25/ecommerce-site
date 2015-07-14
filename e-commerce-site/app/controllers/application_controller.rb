@@ -19,15 +19,16 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  #  def calc_total_price
-  #   session[:cart].map do |order_product|
-  #     orderProduct = OrderProduct.find order_product
-  #     orderProduct.quantity * orderProduct.product.price 
-  #   end.inject(:+)
-  # end
+   def calc_total_price
+    session[:cart].map do |order_product|
+      orderProduct = OrderProduct.find order_product
+      orderProduct.quantity * orderProduct.product.price 
+    end.inject(:+)
+  end
 
-  # def initialize_new_cart
-  #   session[:cart] = []
-  #   session[:order_id] = nil
-  # end
+  def initialize_new_cart
+    session[:cart] = []
+    session[:order_id] = nil
+  end
+  
 end

@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :charges
   resources :categories
 
-  root 'categories#index'
+  root 'products#index'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # The priority is based upon order of creation: first created -> highest priority.
