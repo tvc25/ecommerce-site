@@ -11,4 +11,9 @@ class ApplicationController < ActionController::Base
       Order.new
     end
   end
+
+  def get_cart_count
+    o1 = Order.find(session[:order_id])
+    o1.order_products.count
+  end
 end

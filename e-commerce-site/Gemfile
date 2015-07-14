@@ -17,6 +17,7 @@ gem 'stripe'
 gem 'devise'
 #allows upload of Profile Avatar images to Heroku from Amazon S3
 gem 'carrierwave'
+# shoppe rails helper
 
 group :development, :test do
 

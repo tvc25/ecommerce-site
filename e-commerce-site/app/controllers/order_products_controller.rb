@@ -1,26 +1,29 @@
 class OrderProductsController < ApplicationController
   def create
       @order = current_order
-      @order_item = @order.order_items.new(order_item_params)
+      @order_product = @order.order_products.new(order_product_params)
       @order.save
       session[:order_id] = @order.id
+      count = get_cart_count
+      output = {'status' => 'Item was successfully added to the cart', count: count}
+      render :json => {status: output}
     end
 
     def update
       @order = current_order
-      @order_item = @order.order_items.find(params[:id])
-      @order_item.update_attributes(order_item_params)
-      @order_items = @order.order_items
+      @order_product = @order.order_products.find(params[:id])
+      @order_product.update_attributes(order_product_params)
+      @order_products = @order.order_products
     end
 
     def destroy
       @order = current_order
-      @order_item = @order.order_items.find(params[:id])
-      @order_item.destroy
-      @order_items = @order.order_items
+      @order_product = @order.order_products.find(params[:id])
+      @order_product.destroy
+      @order_products = @order.order_products
     end
   private
-    def order_item_params
-      params.require(:order_item).permit(:quantity, :product_id)
+    def order_product_params
+      params.require(:order_product).permit(:quantity, :product_id)
     end
 end
