@@ -31,8 +31,8 @@ module ECommerceSite
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
 
-   # to set up stripe
-    config.stripe.publishable_key = ENV['STRIPE_TEST_PUBLISHABLE_KEY']
+   # # to set up stripe
+   #  config.stripe.publishable_key = ENV['STRIPE_TEST_PUBLISHABLE_KEY']
 
     config.middleware.insert_before 0, "Rack::Cors" do
   allow do

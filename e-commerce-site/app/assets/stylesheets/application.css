@@ -13,3 +13,304 @@
  *= require_tree .
  *= require_self
  */
+
+ @import"bootstrap.css";
+ .invisible {
+  display: none;
+}
+header {
+  min-width: 100%;
+}
+body {
+  background: url('blur.jpg') center center fixed;
+  background-size: cover;
+}
+.site_container {
+  max-width: 1000px;
+  margin: 8% auto;
+}/*
+.navbar {
+  background: -webkit-linear-gradient(top, #454B56, #393F48);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-color: transparent;
+  z-index: 2;
+}
+.navbar a:hover {
+  color: #ece8ef!important;
+}*/
+.italicise {
+  font-style: italic;
+}
+.yield_container {
+  width: 100%;
+  border: 1px solid transparent;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+  -moz-box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#adacac, direction=135, strength=2);
+}
+#carousel-marketplac-generic {
+  margin-bottom: 30px;
+}
+.indi_product {
+  display: inline-block;
+  cursor: pointer;
+  max-width: 275px;
+  border: 1px solid transparent;
+  padding: 12px;
+  margin: 1em;
+  background-color: #e8efed;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+  -moz-box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#adacac, direction=135, strength=2);
+}
+.indi_product:hover {
+  box-shadow: 0 1px 5px rgba(34, 25, 25, .8);
+  -moz-box-shadow: 0 1px 5px rgba(34, 25, 25, .8);
+  -webkit-box-shadow: 0 1px 5px rgba(34, 25, 25, .8);
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#979797, direction=135, strength=3);
+}
+.indi_product img {
+  border-radius: 8px;
+}
+.product_left_panel, .product_right_panel {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 48%;
+}
+#enlarge-modal {
+  width: 780px;
+}
+/*@media only screen and (min-width : 480px) {
+  #enlarge-modal {
+    width: 600px!important;
+    margin: 30px auto;
+  }
+}*/
+ .modal-content {
+  width: 100%;
+}
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+.colorize {
+  color: #ece8ef!important;
+}
+.flash_msg {
+  color: #5cb85c!important;
+  margin: 0;
+}
+.scrollToTop {
+  position: fixed;
+  display: none;
+  bottom: 12px;
+  right: 12px;
+  padding: 0 15px;
+  line-height: 32px;
+  font-size: 12px;
+  background: #d6d8db;
+  color: #7f8184;
+  font-weight: bold;
+  border-radius: 3px;
+  z-index: 9;
+  cursor: pointer;
+}
+.about-container {
+  padding: 30px;
+}
+.about-img {
+  width: 50%;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+hr.style-eight {
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+}
+hr.style-eight:after {
+  content:"§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
+.quantity {
+  width: 50px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.product_img {
+  margin: auto;
+}
+.list_item {
+  list-style: none;
+}
+.heartbeat {
+  display: inline-block;
+  margin: 15px;
+}
+.goRight {
+  float: right;
+}
+/* Wobble Vertical */
+ @-webkit-keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.wobble-vertical {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-animation-name: wobble-vertical;
+  animation-name: wobble-vertical;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+/* Button container */
+ .progress-button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 45%;
+  min-width: 250px;
+  margin: 10px;
+}
+/* Button style */
+ .progress-button input {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  width: 185px;
+  height: 55px;
+  border: 2px solid #1ECD97;
+  border-radius: 40px;
+  background: transparent;
+  color: #1ECD97;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family:'Montserrat', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+}
+.progress-button input:hover {
+  background-color: #1ECD97;
+  color: #fff;
+}
+.progress-button input:focus {
+  outline: none;
+}
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+ @media only screen and (min-width : 320px) {
+}
+/* Extra Small Devices, Phones */
+ @media only screen and (min-width : 480px) {
+}
+/* Small Devices, Tablets */
+ @media only screen and (min-width : 768px) {
+}
+/* Medium Devices, Desktops */
+ @media only screen and (min-width : 992px) {
+}
+/* Large Devices, Wide Screens */
+ @media only screen and (min-width : 1200px) {
+}
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+ @media only screen and (max-width : 1200px) {
+}
+/* Medium Devices, Desktops */
+ @media only screen and (max-width : 992px) {
+}
+/* Small Devices, Tablets */
+ @media only screen and (max-width : 768px) {
+}
+/* Extra Small Devices, Phones */
+ @media only screen and (max-width : 480px) {
+}
+/* Custom, iPhone Retina */
+ @media only screen and (max-width : 320px) {
+}
