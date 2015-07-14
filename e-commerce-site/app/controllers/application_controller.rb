@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_order, :get_cart_count
 
   def current_order
-    if !session[:order_id].nil?
+    unless session[:order_id].nil?
       Order.find(session[:order_id])
     else
       Order.new
@@ -13,12 +13,10 @@ class ApplicationController < ActionController::Base
   end
 
   def get_cart_count
-    if  !session[:order_id].nil?
+    unless session[:order_id].nil?
       o1 = Order.find(session[:order_id])
-    o1.order_products.count
-  else return nil
-    
-  end
+      o1.order_products.count
+    end
   end
 
   #  def calc_total_price

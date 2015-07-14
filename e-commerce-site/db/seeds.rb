@@ -21,10 +21,10 @@ c3 = Customer.create(first_name: 'Lane', last_name: 'Price', first_line: "17 Wor
 ct1 = Category.create!(name: 'Electronics')
 
 # Create products objects
-p1 = Product.create(name: 'MacBook Pro')
-p2 = Product.create(name: 'Mac Pro')
-p3 = Product.create(name: 'MacBook Air')
-p4 = Product.create(name: 'iPhone')
+p1 = Product.create(name: 'MacBook Pro', price: 10)
+p2 = Product.create(name: 'Mac Pro', price: 20)
+p3 = Product.create(name: 'MacBook Air', price: 30)
+p4 = Product.create(name: 'iPhone', price: 34)
 
 # Method 1
 o1 = c1.orders.create(order_reference: 'fd5skfjh', amount: 500)

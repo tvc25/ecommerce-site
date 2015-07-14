@@ -24,9 +24,10 @@ before_action :set_order_product, only: [:show, :edit, :update, :destroy]
 
  def create
       @order = current_order
-      @order_product = @order.order_products.new(order_product)
+      @order_product = @order.order_products.new(order_product_params)
       @order.save
       session[:order_id] = @order.id
+      #count the number of items in the cart (method inside application controller)
       count = get_cart_count
       output = {'status' => 'Item was successfully added to the cart', count: count}
       render :json => {status: output}
@@ -100,7 +101,7 @@ end
   #     @order_product.destroy
   #     @order_products = @order.order_products
   #   end
-  # private
-  #   def order_product_params
-  #     params.require(:order_product).permit(:quantity, :product_id)
-  #   end
+  private
+    def order_product_params
+      params.require(:order_product).permit(:quantity, :product_id)
+    end

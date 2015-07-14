@@ -3,8 +3,8 @@ $(document).ready(function(){
   $('.addToCart').on('click', function(e){
     e.preventDefault()
     console.log('clicked')
-    var productQuantity = $(this).closest('.form').find('select').val()
-    var productId =  $(this).closest('.product_right_panel').data('id')
+    var productQuantity = $(this).closest('form').find('select').val();
+    var productId =  $(this).closest('.product_right_panel').data('productid');
     $.ajax({
       method: "POST",
       url:"/order_products",
@@ -12,8 +12,9 @@ $(document).ready(function(){
       dataType: "json"
     })
     .done(function(data){
-      var count = data.status.count
-      $(".global-menu #checkout-link span").text("("+ count + ")")
+      $('.cart-count').text(data.status.count + ' item in cart');
+      // var count = data.status.count
+      // $(".global-menu #checkout-link span").text("("+ count + ")")
       
     })
   })
