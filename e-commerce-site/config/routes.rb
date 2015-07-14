@@ -1,17 +1,18 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   get 'carts/show'
-  resource :cart, only: [:show]
   resources :users
+  resource :cart, only: [:show]
   # devise_for :users
   resources :products
   resources :customers
   resources :orders
-  resources :order_products, only: [:create, :update, :destroy]
+  resources :order_products, only: [:index, :checkout,:create, :update, :destroy]
   resources :charges
   resources :categories
 
-  root 'products#index'
+  root 'categories#index'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # The priority is based upon order of creation: first created -> highest priority.

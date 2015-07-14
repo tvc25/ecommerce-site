@@ -14,7 +14,7 @@ $(document).ready(function(){
     })
     .done(function(data){
       var count = data.status.count
-      $(".global-menu #checkout-link span").text("( "+ count + ")")
+      $(".global-menu #checkout-link span").text("("+ count + ")")
       
     })
   })

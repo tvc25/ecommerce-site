@@ -1,0 +1,42 @@
+<%= button_to 'Continue to Shop', root_path, :method => 'get', :class => 'btn btn-info' %>
+<h1 class="lead"><%= current_user.username %>'s Shopping Cart</h1>
+
+<div class="table-responsive text-center">
+  <table class="table table-hover lead">
+    <thead>
+      <tr>
+        <th class="text-center">Quantity</th>
+        <th class="text-center">Product</th>
+        <th class="text-center">Price (GBP)</th>
+        <th class="text-center">Subtotal (GBP)</th>
+        <th class="text-center"></th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td><b>Total</b></td>
+        <td></td>
+        <td></td>
+        <td><b class="wobble-vertical totalPrice">$<%= @total %>0 GBP</b></td>
+        <td>
+          <% if @order_products.any? %>
+            <%= button_to 'Checkout', checkout_path, :method => 'get', :class => 'btn btn-success', data: { confirm: 'Are you sure?' } %>
+          <% else %>
+            <%= button_to 'Back to shop', root_path, :method => 'get', :class => 'btn btn-success' %>
+          <% end %>
+        </td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <% @order_products.each do |order_product| %>
+        <tr data-productID="<%= order_product.id %>">
+          <td><%= order_product.quantity %></td>
+          <td><%= order_product.product.name %></td>
+          <td><%= number_to_currency order_product.product.price %> AUD</td>
+          <td><%= number_to_currency order_product.product.price * order_product.quantity %> GBP</td>
+          <td><%= button_to 'Remove', order_product, method: :delete, :class => 'btn btn-danger removeFromCart' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

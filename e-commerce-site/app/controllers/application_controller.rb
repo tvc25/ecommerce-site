@@ -13,7 +13,23 @@ class ApplicationController < ActionController::Base
   end
 
   def get_cart_count
-    o1 = Order.find(session[:order_id])
+    if  !session[:order_id].nil?
+      o1 = Order.find(session[:order_id])
     o1.order_products.count
+  else return nil
+    
   end
+  end
+
+  #  def calc_total_price
+  #   session[:cart].map do |order_product|
+  #     orderProduct = OrderProduct.find order_product
+  #     orderProduct.quantity * orderProduct.product.price 
+  #   end.inject(:+)
+  # end
+
+  # def initialize_new_cart
+  #   session[:cart] = []
+  #   session[:order_id] = nil
+  # end
 end

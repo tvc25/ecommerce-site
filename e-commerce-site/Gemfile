@@ -12,12 +12,16 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'thin'
 gem 'rails_admin'
-
 gem 'stripe'
 gem 'devise'
 #allows upload of Profile Avatar images to Heroku from Amazon S3
-gem 'carrierwave'
+# gem 'carrierwave'
 # shoppe rails helper
+
+#underscore javascript library
+gem 'underscore-rails'
+
+gem 'bootstrap-sass'
 
 group :development, :test do
 
@@ -29,6 +33,7 @@ gem 'web-console', '~> 2.0'
 gem 'spring'
 gem 'binding_of_caller'
 gem 'better_errors'
+gem 'httparty'
 end
 
 
