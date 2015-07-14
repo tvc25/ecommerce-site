@@ -2,10 +2,9 @@
 
  <div class="allProducts_container">
    <% @products.each do |product| %>
-
      <%#= image_tag product.img %>
       <%= product.name %>
       <%= number_to_currency product.price %>
-      <%= render :partial => 'product_info', :locals => {product:product} %>
+      <%= render :partial => 'product_info', :locals => {product: product} %>
   <% end %>
 </div>
