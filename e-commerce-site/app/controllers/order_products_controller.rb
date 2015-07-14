@@ -22,24 +22,15 @@ before_action :set_order_product, only: [:show, :edit, :update, :destroy]
     @order_products = OrderProduct.new
   end
 
-  def create
-    @order_product = OrderProduct.create(order_product_params)
-
-    respond_to do |format|
-      if @order_product.save
-        session[:cart] ||= []
-        session[:cart].push @order_product.id
-
-        output = {'status' => 'Item was added to cart.'}.to_json
-
-        format.html { redirect_to order_products_path, notice: 'Item was added to cart.' }
-        format.json { render :json => output }
-      else
-        format.html { render :new }
-        format.json { render json: @order_product.errors, status: :unprocessable_entity }
-      end
+ def create
+      @order = current_order
+      @order_product = @order.order_products.new(order_product)
+      @order.save
+      session[:order_id] = @order.id
+      count = get_cart_count
+      output = {'status' => 'Item was successfully added to the cart', count: count}
+      render :json => {status: output}
     end
-  end
 
   # User proceed to payment from here.
   def checkout
@@ -92,22 +83,9 @@ before_action :set_order_product, only: [:show, :edit, :update, :destroy]
     def set_order_product
       @order_product = OrderProduct.find(params[:id])
     end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def order_product_params
-     params.require(:order_product).permit(:quantity, :product_id)
-    end
 end
 
-  # def create
-  #     @order = current_order
-  #     @order_product = @order.order_products.new(order_product_params)
-  #     @order.save
-  #     session[:order_id] = @order.id
-  #     count = get_cart_count
-  #     output = {'status' => 'Item was successfully added to the cart', count: count}
-  #     render :json => {status: output}
-  #   end
+ 
 
   #   def update
   #     @order = current_order
