@@ -1,11 +1,10 @@
 $(document).ready(function(){
   console.log('loaded!')
-  $('.cart-button').on('click', function(e){
+  $('.addToCart').on('click', function(e){
     e.preventDefault()
     console.log('clicked')
-    var productQuantity = $(this).closest('.input-group').find('.form-control').val()
-    var productId =  $(this).closest('.well').data('id')
-
+    var productQuantity = $(this).closest('.form').find('select').val()
+    var productId =  $(this).closest('.product_right_panel').data('id')
     $.ajax({
       method: "POST",
       url:"/order_products",
