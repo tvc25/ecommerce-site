@@ -31,9 +31,9 @@ o1 = c1.orders.create(order_reference: 'fd5skfjh', amount: 500)
 o2 = c2.orders.create(order_reference: 'fd5sk2jh', amount: 400)
 o3 = c3.orders.create(order_reference: 'fd5sk3jh', amount: 200)
 
-# Method 2
-# Order.create(order_reference: 'f4ds5fjh', amount: 300, customer_id: c2.id)
-# Method 3
+#Method 2
+Order.create(order_reference: 'f4ds5fjh', amount: 300, customer_id: c2.id)
+#Method 3
 o3 = Order.create(order_reference: 'fds5kfjh', amount: 500)
 o3.customer_id = c1.id
 o3.save
