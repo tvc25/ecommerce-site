@@ -13,7 +13,9 @@ $(document).ready(function(){
       dataType: "json"
     })
     .done(function(data){
-      //You can update the html, the count is inside data.count
+      var count = data.status.count
+      $(".global-menu #checkout-link span").text("( "+ count + ")")
+      
     })
   })
 });

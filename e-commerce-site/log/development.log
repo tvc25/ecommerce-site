@@ -1,0 +1,2121 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:46:20 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (5.0ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.5ms)
+  Rendered products/index.html.erb within layouts/application (20.4ms)
+  Rendered layouts/_cart_text.html.erb (0.3ms)
+Completed 200 OK in 345ms (Views: 290.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (1.5ms)
+  Rendered products/_product_row.html.erb (0.7ms)
+  Rendered products/_product_row.html.erb (0.8ms)
+  Rendered products/_product_row.html.erb (1.0ms)
+  Rendered products/index.html.erb within layouts/application (29.5ms)
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 168ms (Views: 165.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:21 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:22 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:22 +0100
+
+
+Started GET "/assets/script.self-65732b20d55b8ef6903f9727b3fb956db1297423f2f05068f6464d338a5346b8.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:22 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:22 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:22 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:22 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:22 +0100
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:46:29 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:46:29.210803"], ["updated_at", "2015-07-14 10:46:29.210803"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:46:54 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.6ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:46:54.473744"], ["updated_at", "2015-07-14 10:46:54.473744"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (0.6ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 217ms (Views: 214.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/script.self-cc5c6d5e159c4e58efa63aee80eb092753ae3c519e9e55765cc05e67424a73b4.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:46:55 +0100
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:46:57 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:46:57.167431"], ["updated_at", "2015-07-14 10:46:57.167431"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:49:03 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (0.6ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_cart_text.html.erb (0.1ms)
+Completed 200 OK in 205ms (Views: 202.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:03 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:03 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:03 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:03 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:03 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/script.self-cb2cd8f3881d17bd01f4a88538b61e73a9ff772c3a2a5e1eae3866d54cb7922f.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:04 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (0.6ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 109.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/script.self-cb2cd8f3881d17bd01f4a88538b61e73a9ff772c3a2a5e1eae3866d54cb7922f.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:35 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (1.1ms)
+  Rendered products/_product_row.html.erb (0.5ms)
+  Rendered products/_product_row.html.erb (0.5ms)
+  Rendered products/_product_row.html.erb (0.5ms)
+  Rendered products/index.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 107ms (Views: 104.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/script.self-cb2cd8f3881d17bd01f4a88538b61e73a9ff772c3a2a5e1eae3866d54cb7922f.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:49:53 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (0.6ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.6ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_cart_text.html.erb (0.1ms)
+Completed 200 OK in 236ms (Views: 234.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/script.self-b58f0534e540fbdfe3fd0a01e920ef13cab0cbafd1879db1e089ded7002ef7a4.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:50:49 +0100
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:50:51 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:50:51.848341"], ["updated_at", "2015-07-14 10:50:51.848341"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:50:52 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:50:52.945334"], ["updated_at", "2015-07-14 10:50:52.945334"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:50:53 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:50:53.410092"], ["updated_at", "2015-07-14 10:50:53.410092"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:50:53 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:50:53.591211"], ["updated_at", "2015-07-14 10:50:53.591211"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 20ms (Views: 14.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:50:53 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:50:53.745177"], ["updated_at", "2015-07-14 10:50:53.745177"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:50:53 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:50:53.914572"], ["updated_at", "2015-07-14 10:50:53.914572"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:50:54 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:50:54.074236"], ["updated_at", "2015-07-14 10:50:54.074236"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:50:54 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:50:54.218218"], ["updated_at", "2015-07-14 10:50:54.218218"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:50:54 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:50:54.377802"], ["updated_at", "2015-07-14 10:50:54.377802"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:51:00 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (0.7ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 106.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/script.self-b58f0534e540fbdfe3fd0a01e920ef13cab0cbafd1879db1e089ded7002ef7a4.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:01 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:51:48 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (1.3ms)
+  Rendered products/_product_row.html.erb (0.5ms)
+  Rendered products/_product_row.html.erb (0.5ms)
+  Rendered products/_product_row.html.erb (0.5ms)
+  Rendered products/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 108ms (Views: 105.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/script.self-b58f0534e540fbdfe3fd0a01e920ef13cab0cbafd1879db1e089ded7002ef7a4.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:51:49 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (1.0ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (11.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 136ms (Views: 112.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/script.self-b58f0534e540fbdfe3fd0a01e920ef13cab0cbafd1879db1e089ded7002ef7a4.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:27 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:53:31 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (1.1ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.3ms)
+  Rendered products/_product_row.html.erb (0.3ms)
+  Rendered products/index.html.erb within layouts/application (8.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 95.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/script.self-b58f0534e540fbdfe3fd0a01e920ef13cab0cbafd1879db1e089ded7002ef7a4.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:53:32 +0100
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:53:34 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:53:34.504528"], ["updated_at", "2015-07-14 10:53:34.504528"]]
+  [1m[36m (61.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 67ms (Views: 0.3ms | ActiveRecord: 62.0ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:53:34 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:53:34.717410"], ["updated_at", "2015-07-14 10:53:34.717410"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:53:34 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:53:34.868658"], ["updated_at", "2015-07-14 10:53:34.868658"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:53:34 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:53:34.995953"], ["updated_at", "2015-07-14 10:53:34.995953"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:48 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:48.844976"], ["updated_at", "2015-07-14 10:54:48.844976"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:49 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:49.025813"], ["updated_at", "2015-07-14 10:54:49.025813"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:49 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:49.178718"], ["updated_at", "2015-07-14 10:54:49.178718"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:49 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:49.370631"], ["updated_at", "2015-07-14 10:54:49.370631"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:49 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:49.537766"], ["updated_at", "2015-07-14 10:54:49.537766"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:49 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:49.796411"], ["updated_at", "2015-07-14 10:54:49.796411"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:49 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:49.987899"], ["updated_at", "2015-07-14 10:54:49.987899"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:50 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:50.134903"], ["updated_at", "2015-07-14 10:54:50.134903"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:50 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:50.263459"], ["updated_at", "2015-07-14 10:54:50.263459"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:50 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:50.414859"], ["updated_at", "2015-07-14 10:54:50.414859"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:50 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:50.578740"], ["updated_at", "2015-07-14 10:54:50.578740"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:50 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:50.850635"], ["updated_at", "2015-07-14 10:54:50.850635"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:50 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:50.996014"], ["updated_at", "2015-07-14 10:54:50.996014"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:51 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:51.129381"], ["updated_at", "2015-07-14 10:54:51.129381"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:51 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:51.289265"], ["updated_at", "2015-07-14 10:54:51.289265"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:51 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:51.619067"], ["updated_at", "2015-07-14 10:54:51.619067"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (0.6ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.6ms)
+  Rendered products/_product_row.html.erb (0.6ms)
+  Rendered products/index.html.erb within layouts/application (8.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 104ms (Views: 101.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/script.self-b58f0534e540fbdfe3fd0a01e920ef13cab0cbafd1879db1e089ded7002ef7a4.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:52 +0100
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:53 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:53.970950"], ["updated_at", "2015-07-14 10:54:53.970950"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:54 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:54.126445"], ["updated_at", "2015-07-14 10:54:54.126445"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:54 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:54.263630"], ["updated_at", "2015-07-14 10:54:54.263630"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:54 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:54.414514"], ["updated_at", "2015-07-14 10:54:54.414514"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:54 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:54.532827"], ["updated_at", "2015-07-14 10:54:54.532827"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:54 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:54.702219"], ["updated_at", "2015-07-14 10:54:54.702219"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:54 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:54.846397"], ["updated_at", "2015-07-14 10:54:54.846397"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:54 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:55.006538"], ["updated_at", "2015-07-14 10:54:55.006538"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:54:55.118102"], ["updated_at", "2015-07-14 10:54:55.118102"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (0.7ms)
+  Rendered products/_product_row.html.erb (0.5ms)
+  Rendered products/_product_row.html.erb (0.5ms)
+  Rendered products/_product_row.html.erb (0.7ms)
+  Rendered products/index.html.erb within layouts/application (8.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 115ms (Views: 112.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/script.self-b58f0534e540fbdfe3fd0a01e920ef13cab0cbafd1879db1e089ded7002ef7a4.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:54:55 +0100
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:55:20 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:55:20.398185"], ["updated_at", "2015-07-14 10:55:20.398185"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:55:20 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:55:20.546556"], ["updated_at", "2015-07-14 10:55:20.546556"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:55:20 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:55:20.683703"], ["updated_at", "2015-07-14 10:55:20.683703"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:55:20 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:55:20.832383"], ["updated_at", "2015-07-14 10:55:20.832383"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:55:20 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:55:20.978305"], ["updated_at", "2015-07-14 10:55:20.978305"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:55:21 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:55:21.116099"], ["updated_at", "2015-07-14 10:55:21.116099"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:55:21 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:55:21.259532"], ["updated_at", "2015-07-14 10:55:21.259532"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:55:21 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:55:21.400113"], ["updated_at", "2015-07-14 10:55:21.400113"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:55:21 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:55:21.553546"], ["updated_at", "2015-07-14 10:55:21.553546"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:55:21 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:55:21.698706"], ["updated_at", "2015-07-14 10:55:21.698706"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/order_products" for 127.0.0.1 at 2015-07-14 11:55:21 +0100
+Processing by OrderProductsController#create as JSON
+  Parameters: {"order_product"=>{"product_id"=>"1", "quantity"=>"1"}}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "order_products" ("quantity", "product_id", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["quantity", 1], ["product_id", 1], ["order_id", 6], ["created_at", "2015-07-14 10:55:21.834548"], ["updated_at", "2015-07-14 10:55:21.834548"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/Checkout" for 127.0.0.1 at 2015-07-14 11:55:41 +0100
+
+ActionController::RoutingError (No route matches [GET] "/Checkout"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.1) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (96.9ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (42.8ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (86.5ms)
+
+
+Started GET "/Checkout" for 127.0.0.1 at 2015-07-14 11:55:41 +0100
+
+ActionController::RoutingError (No route matches [GET] "/Checkout"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.1) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.8ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (37.3ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/wdi/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (77.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:55:44 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (0.7ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.5ms)
+  Rendered products/index.html.erb within layouts/application (7.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 94.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/customer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/main.self-f1efb4149cbd0caf44688a2092701e1b8fad114d106da745ce6270f877c898ca.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/normalize.self-333ce827f60870acbaa5a751d49889465ce84697ee03980558f7d38405f670da.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/order.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/order_products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/scaffolds.self-4abd78c5339767971a8b2ab4e6d4920751a643e00c046eec4cba864522db289b.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/product.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/template.self-af3d433166e8bcd86bad89e56a3af1b9026f77f06eb87fe219870cfe15fc4246.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/customer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/order.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/script.self-b58f0534e540fbdfe3fd0a01e920ef13cab0cbafd1879db1e089ded7002ef7a4.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/order_products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/product.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-14 11:55:45 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-14 11:56:31 +0100
+Processing by ProductsController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."active" = 't'[0m
+  Rendered products/_product_row.html.erb (1.1ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/_product_row.html.erb (0.5ms)
+  Rendered products/_product_row.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (10.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+  Rendered layouts/_cart_text.html.erb (0.2ms)
+Completed 200 OK in 126ms (Views: 123.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2015-07-14 11:56:34 +0100
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendered products/show.html.erb within layouts/application (0.2ms)
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 101ms (Views: 100.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2015-07-14 11:56:37 +0100
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered products/show.html.erb within layouts/application (0.0ms)
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "order_products" WHERE "order_products"."order_id" = $1[0m  [["order_id", 6]]
+  Rendered layouts/_cart_text.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 93.9ms | ActiveRecord: 0.6ms)
