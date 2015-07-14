@@ -1,21 +1,14 @@
 <h3 class="text-center">Products for Sale</h3>
 
-<div class="row">
-  <div class="col-xs-6 col-xs-offset-3">
-    <% @products.each do |product| %>
-      <%= render "product_row", product: product, order_product: @order_product %>
-    <% end %>
-  </div>
-</div>
 
-    <div class="product-list">
-<% @products.each do |product| %>
- <div class="list-group-item">
- <%= link_to product_path(product.id) do %>
- <%end%>
-<ul class="product">
-    <li><%=link_to(product.name,product_path(product.id))%></li>
-<%end%>
-      </ul>
+
+ <div class="allProducts_container">
+   <% @products.each do |product| %>
+   <div class="indivi_product" id="draggable">
+     <%#= image_tag product.img %>
+      <%= product.name %>
+      <%= number_to_currency product.price %>GBP
+      <%= render :partial => 'product_info', :locals => {product:product} %>
     </div>
+  <% end %>
 </div>

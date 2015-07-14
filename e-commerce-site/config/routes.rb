@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
-
   devise_for :users
   get 'carts/show'
-  resources :users
   resource :cart, only: [:show]
-  # devise_for :users
   resources :products
   resources :customers
   resources :orders

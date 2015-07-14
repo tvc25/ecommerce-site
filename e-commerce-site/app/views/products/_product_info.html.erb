@@ -1,0 +1,60 @@
+<button class="btn btn-primary invisible" id="model_button" data-toggle="modal" data-target="#myModal<%= product.id %> ">
+  See more
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal<%= product.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" id="enlarge-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title lead text-center" id="myModalLabel"><b><%= product.name %></b></h4>
+      </div>
+      <div class="modal-body">
+
+  <!--       <div class="product_left_panel">
+          <p>
+            <%#= image_tag product.img, :class => 'img-responsive product_img' %>
+          </p>
+        </div> -->
+
+        <div class="product_right_panel" data-productID="<%= product.id %>">
+          <div class="progress-button">
+            <% if user_signed_in? %>
+              <%= form_tag("/order_products", method: "post") do %>
+                <%= select_tag "quantity", options_for_select((1..10).step(1)), :class => 'form-control quantity' %>
+                <%= hidden_field_tag 'product_id', product.id %>
+                <%= submit_tag "Add to Cart", :class => "addToCart" %>
+              <% end %>
+
+              <%# if current_user.admin? %>
+                <%= link_to 'Edit', edit_product_path(product), :class => 'btn btn-info' %>
+                <%= link_to 'Delete', edit_product_path(product), :class => 'btn btn-danger' %>
+              <%# end %>
+
+            <% else %>
+              <p class="lead"><%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Sign in", new_user_session_path %><br> and <br>add item to your cart.</p>
+            <% end %>
+          </div>
+
+          <p class="lead">
+            <strong>Designer:</strong>
+            <%= product.name %>
+          </p>
+
+          <p class="lead">
+            <strong>Price:</strong>
+            <%= number_to_currency product.price %> GBP
+          </p>
+
+        <!--   <p class="lead">
+            <strong>Stock:</strong>
+          
+          </p> -->
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
