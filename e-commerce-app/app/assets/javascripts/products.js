@@ -31,10 +31,8 @@ $('.removeFromCart').on('click', function(e){
     $('body').find("[data-productID='" + productId + "']").fadeOut();
     $('.flash_msg').text(data.status).toggleClass('wobble-vertical');
     //redraw the total price on screen so that it will update instantly whenever item removed from cart
-    $('.totalPrice').html('<b>£' + data.updatedPrice + '0 GBP</b>');
-
-  }).error(function() {
-    console.log('remove item failed');
+    $('.totalPrice').html('<b>£' + data.updatedPrice + ' GBP</b>');
+  })
 })
 
 

@@ -9,4 +9,8 @@ class ApplicationController < ActionController::Base
       orderProduct.quantity * orderProduct.product.price
     end.inject(:+)
   end
+  def initialize_new_cart
+    session[:cart] = []
+    session[:order_id] = nil
+  end
 end

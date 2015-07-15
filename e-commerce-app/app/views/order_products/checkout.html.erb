@@ -1,0 +1,29 @@
+div class="timer">
+    Loading...
+</div>
+<span class="lead"><b>  Checkout Page</b></span>
+<h4>Proceeding to payment ...</h4><hr>
+
+<ul>
+  <% @order.products.each do |order| %>
+    <li class="list_item lead"><i class="glyphicon glyphicon-ok text-success"></i> <%= order.title %></li>
+  <% end %>
+</ul>
+<hr>
+
+
+<!-- for stripe -->
+<%= form_tag charges_path do %>
+  <article>
+    <label class="amount">
+      <span class="lead">Total Amount:<b> £<%= @updatedPrice %> GBP</b></span>
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="Please provide your details in the spaces provided below."
+          data-billing-address= 'true'
+          data-shipping-address= 'true'
+          data-amount="<%= (@updatedPrice * 100).to_i %>"></script>
+<% end %>

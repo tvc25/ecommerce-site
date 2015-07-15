@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   resources :products
   resources :order_products
   resources :categories
+  resources :charges
+
+  get 'checkout' => 'order_products#checkout'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
