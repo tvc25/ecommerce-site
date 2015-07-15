@@ -16,4 +16,27 @@ $(document).ready(function(){
       $('.flash_msg').text(data.status);
     })
   })
+
+//Remove item from cart
+$('.removeFromCart').on('click', function(e){
+  e.preventDefault()
+  console.log('clicked')
+  var productId = $(this).closest('tr').data().productid
+  $.ajax({
+    method: "DELETE",
+    url:"/order_products/" + productId,
+    dataType: "json"
+  })
+  .done(function(data){
+    $('body').find("[data-productID='" + productId + "']").fadeOut();
+    $('.flash_msg').text(data.status).toggleClass('wobble-vertical');
+    //redraw the total price on screen so that it will update instantly whenever item removed from cart
+    $('.totalPrice').html('<b>$' + data.updatedPrice + '0 AUD</b>');
+
+  })
+})
+
+
 });
+
+

@@ -4,6 +4,7 @@ class OrderProductsController < ApplicationController
   # GET /order_products
   # GET /order_products.json
   def index
+    # session[:cart] = []
     if session[:cart]
       @order_products = OrderProduct.find session[:cart]
       @total = OrderProduct.total(@order_products)
@@ -64,12 +65,16 @@ class OrderProductsController < ApplicationController
   # DELETE /order_products/1
   # DELETE /order_products/1.json
   def destroy
+    # this is deleting one item from the cart
+    session[:cart].delete(params[:id].to_i)
+    @updatedPrice = calc_total_price || ''
     @order_product.destroy
-    respond_to do |format|
-      format.html { redirect_to order_products_url, notice: 'Order product was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    output = {'status' => 'Item was successfully removed from cart.', 'updatedPrice' => @updatedPrice}.to_json
+   respond_to do |format|
+    format.html { redirect_to order_products_url, notice: 'You have successfully removed one item from your shopping cart.' }
+    format.json { render :json => output }
   end
+end
 
   private
     # Use callbacks to share common setup or constraints between actions.
