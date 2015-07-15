@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Products</h1>
+<div class="products-container">
+  <% @products.each do |product| %>
+    <div class="product-info">
+      <p><%= product.name %></p>
+      <%= product.price %>
+      <%= product.category_id %>
+      <%= product.active %>
+      <%= product.description %>
+      <%= image_tag(product.image) %>
+      <%= link_to 'Show', product %>
+      <%= form_tag("/order_products", method: "post") do %>
+        <%= select_tag "quantity", options_for_select((1..10).step(1)), :class => 'form-control quantity' %>
+        <%= hidden_field_tag 'product_id', product.id %>
+        <%= submit_tag "Add to Cart", :class => "addToCart" %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+<%= link_to 'New Product', new_product_path %>
