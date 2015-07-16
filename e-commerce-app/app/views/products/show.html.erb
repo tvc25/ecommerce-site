@@ -1,39 +1,35 @@
 <p id="notice"><%= notice %></p>
 
+<div class="left">
 <p>
-  <strong>Name:</strong>
+  <%= image_tag @product.image %>
+</p>
+</div>
+
+
+<div class="right">
+
+<p>
+ <h2> <%= @product.designer %></h2>
+</p>
+
+<p>
  <h3> <%= @product.name %></h3>
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= image_tag @product.image %>
-</p>
-
-<p>
-  <strong>Tag:</strong>
   <%= @product.tag %>
 </p>
 
 <p>
-  <strong>Price:</strong>
-  <%= @product.price %>
+  £<%= @product.price %>
 </p>
 
 <p>
-  <strong>Category:</strong>
-  <%= @product.category_id %>
-</p>
-
-<p>
-  <strong>Active:</strong>
-  <%= @product.active %>
-</p>
-
-<p>
-  <strong>Description:</strong>
   <%= @product.description %>
 </p>
+
+</div>
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
