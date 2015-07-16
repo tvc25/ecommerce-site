@@ -8,6 +8,8 @@
 </head>
 <body>
  <header>
+
+ <h1>THE_SHOP</h1>
   <!-- Bootstrap nav bar start here -->
   <nav class="navbar navbar-default global-nav" role="navigation">
     <div class="container-fluid">
@@ -39,7 +41,7 @@
             <li  class="global-nav"><%= link_to current_user.email, root_path, :class => 'disabled colorize' %></li>
             <li class="global-nav"><%= link_to 'Order History', user_index_path%></li>
             <li  class="global-nav"><%= link_to 'Setting', edit_user_registration_path %></li>
-            <li  class="global-nav"><%= link_to 'Cart', order_products_path %></li>
+            <li  class="global-nav bag"><%=link_to image_tag('bag3.png'), order_products_path %></li>
             <li  class="global-nav"><%= link_to 'Sign Out', destroy_user_session_path, :method => 'delete', data: { confirm: 'Are you sure?' } %></li>
 
            

@@ -32,6 +32,13 @@ class OrderProductsController < ApplicationController
   # GET /order_products/1
   # GET /order_products/1.json
   def show
+  #   # session[:cart] = []
+  #   if session[:cart]
+  #     @order_products = OrderProduct.find session[:cart]
+  #     @total = OrderProduct.total(@order_products)
+  # else
+  #     @order_products = []
+  #   end
   end
 
   # GET /order_products/new

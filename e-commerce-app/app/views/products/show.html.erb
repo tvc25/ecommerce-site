@@ -1,36 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div class="product-show">
 
-<div class="left">
-<p>
-  <%= image_tag @product.image %>
-</p>
-</div>
-
-
-<div class="right">
-
-<p>
- <h2> <%= @product.designer %></h2>
-</p>
-
-<p>
- <h3> <%= @product.name %></h3>
-</p>
-
-<p>
-  <%= @product.tag %>
-</p>
-
-<p>
-  £<%= @product.price %>
-</p>
-
-<p>
-  <%= @product.description %>
-</p>
+<div class="left box-6 box">
+  
+ <%= image_tag(@product.image) %>
 
 </div>
 
+<div class="right box-6 box">
+    <div class="product-info">
+      <h2><%=@product.designer%></h2>
+      <p><%= @product.name %></p>
+      <p><strong>£<%= @product.price %></strong></p>
+      <p><%= @product.description %></p>
+      
+      <%= form_tag("/order_products", method: "post") do %>
+     <p> <%= select_tag "quantity", options_for_select((1..10).step(1)), :class => 'form-control quantity' %></p>
+      <%= hidden_field_tag 'product_id', @product.id %>
+      <p><%= submit_tag "Add to Cart", :class => "addToCart" %></p>
+      <% end %>
+      </div>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+      </div>
+  
+      </div>
+
+      </div>
+
+

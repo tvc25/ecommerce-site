@@ -1,19 +1,16 @@
-<p id="notice"><%= notice %></p>
+<p id="notice sign-in"><%= notice %></p>
 
-<h1>Products</h1>
+<h2>P_RODUCTS</h2>
 <div class="products-container box-11">
   <% @products.each do |product| %>
     <div class="product-info">
-      <p><%= product.name %></p>
-      £<%= product.price %>
-      <%= product.category_id %>
-      <%= product.description %>
-      <%= image_tag(product.image) %>
-      <%= link_to 'Show', product %>
+      <p><%= image_tag(product.image) %></p>
+     <h5><%= product.designer %></h5> 
+      <h4><%= product.name %></h4>
+      <h4>£<%= product.price %></h4>
+      <p><%= link_to 'Show', product %></p>
       <%= form_tag("/order_products", method: "post") do %>
-      <%= select_tag "quantity", options_for_select((1..10).step(1)), :class => 'form-control quantity' %>
       <%= hidden_field_tag 'product_id', product.id %>
-      <%= submit_tag "Add to Cart", :class => "addToCart" %>
       <% end %>
     </div>
   <% end %>
