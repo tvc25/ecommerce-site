@@ -19,9 +19,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand-main colorize" href="/">The<i class="italicise">Shop</i></a>
+        <a class="navbar-brand-main colorize main-brand" href="/">THIS IS<i class="italicise">THE_SHOP</i></a>
       </div>
-<div class="main-brand"> THIS IS THE SHOP</div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 <!--         <form class="navbar-form navbar-left" role="search"> -->
@@ -38,13 +37,14 @@
           <li><a href="/" class="flash_msg disabled notice alert"><%= notice %><%= alert %></a></li>
           <% if user_signed_in? %>
             <li  class="global-nav"><%= link_to current_user.email, root_path, :class => 'disabled colorize' %></li>
+            <li class="global-nav"><%= link_to 'Order History', user_index_path%></li>
             <li  class="global-nav"><%= link_to 'Setting', edit_user_registration_path %></li>
             <li  class="global-nav"><%= link_to 'Cart', order_products_path %></li>
             <li  class="global-nav"><%= link_to 'Sign Out', destroy_user_session_path, :method => 'delete', data: { confirm: 'Are you sure?' } %></li>
 
            
-              <li><%= link_to "Add Product", new_product_path %></li>
-           
+<!--               <li><%= link_to "Add Product", new_product_path %></li>
+ -->           
           <% else %>
             <li><%= link_to "Sign up", new_user_registration_path %></li>
             <li><%= link_to "Sign in", new_user_session_path %></li>
@@ -55,6 +55,8 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+
+  
   <!-- Bootstrap nav bar ending -->
 </header>
 
