@@ -17,7 +17,7 @@
         <td><b>Total</b></td>
         <td></td>
         <td></td>
-        <td><b class="wobble-vertical totalPrice">£ <%= @total %>0 GBP</b></td>
+        <td><b class="wobble-vertical totalPrice">£ <%= @total %> GBP</b></td>
         <td>
           <% if @order_products.any? %>
             <%= button_to 'Checkout', checkout_path, :method => 'get', :class => 'btn btn-success', data: { confirm: 'Are you sure?' } %>
@@ -32,8 +32,8 @@
         <tr data-productID="<%= order_product.id %>">
           <td><%= order_product.quantity %></td>
           <td><%= order_product.product.name %></td>
-          <td><%= number_to_currency order_product.product.price %> GBP</td>
-          <td><%= number_to_currency order_product.product.price * order_product.quantity %> GBP</td>
+          <td>£<%= order_product.product.price %> GBP</td>
+          <td>£<%= order_product.product.price * order_product.quantity %> GBP</td>
           <td><%= button_to 'Remove', order_product, method: :delete, :class => 'btn btn-danger removeFromCart' %></td>
         </tr>
       <% end %>

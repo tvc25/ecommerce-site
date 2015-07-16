@@ -1,3 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,400);
+
+body {
+  font-family: 'Georgia';
+}
+
 .product-info{
   width:20%;
   display:inline-block;
@@ -6,10 +14,18 @@
   }
 }
 
+li {
+  list-style-type: none;
+}
+
 
 .form-control {
   height: 20px;
   border-radius: 2px;
+}
+
+.brand-main{
+  font-size: 10px;
 }
 
 /****NAV*****/
@@ -19,9 +35,17 @@
   background-color: rgba(59,68,75,1);
   border-radius: 0px;
   border-style: none;
+  font-family: 'Josefin-Sans-Light';
+  font-size: 30px;
+  font-weight: 300;
 }
 
+
 .global-nav a {
+  font-size:14px;
+}
+
+.global-nav li {
   font-size:14px;
 }
 
@@ -125,3 +149,4 @@
 .box-16 {
   width:100%;
 }
+

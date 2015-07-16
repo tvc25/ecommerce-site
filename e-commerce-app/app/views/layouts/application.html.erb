@@ -9,7 +9,6 @@
 <body>
  <header>
   <!-- Bootstrap nav bar start here -->
-  <nav></nav>
   <nav class="navbar navbar-default global-nav" role="navigation">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,28 +19,28 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand colorize" href="/">The<i class="italicise">Shop</i></a>
+        <a class="navbar-brand-main colorize" href="/">The<i class="italicise">Shop</i></a>
       </div>
-
+<div class="main-brand"> THIS IS THE SHOP</div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
+<!--         <form class="navbar-form navbar-left" role="search"> -->
+<!--           <div class="form-group">
             <input type="text" class="form-control" placeholder="Keyword">
-          </div>
-          <button type="submit" class="btn btn-info">Search</button>
-        </form>
+          </div> -->
+<!--           <button type="submit" class="btn btn-info">Search</button>
+        </form> -->
         <ul class="nav navbar-nav">
-          <li><a href="#" data-toggle="modal" data-target=".bs-about-modal-lg">About</a></li>
-          <li><a href="#" data-toggle="modal" data-target=".bs-contact-modal-lg">Contact</a></li>
+          <li><a href="#" data-toggle="modal" class="global-nav" data-target=".bs-about-modal-lg">About</a></li>
+          <li><a href="#" data-toggle="modal" class="global-nav" data-target=".bs-contact-modal-lg">Contact</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right global-nav">
           <li><a href="/" class="flash_msg disabled notice alert"><%= notice %><%= alert %></a></li>
           <% if user_signed_in? %>
-            <li><%= link_to current_user.email, root_path, :class => 'disabled colorize' %></li>
-            <li><%= link_to 'Setting', edit_user_registration_path %></li>
-            <li><%= link_to 'Cart', order_products_path %></li>
-            <li><%= link_to 'Sign Out', destroy_user_session_path, :method => 'delete', data: { confirm: 'Are you sure?' } %></li>
+            <li  class="global-nav"><%= link_to current_user.email, root_path, :class => 'disabled colorize' %></li>
+            <li  class="global-nav"><%= link_to 'Setting', edit_user_registration_path %></li>
+            <li  class="global-nav"><%= link_to 'Cart', order_products_path %></li>
+            <li  class="global-nav"><%= link_to 'Sign Out', destroy_user_session_path, :method => 'delete', data: { confirm: 'Are you sure?' } %></li>
 
            
               <li><%= link_to "Add Product", new_product_path %></li>

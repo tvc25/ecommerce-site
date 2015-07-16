@@ -5,8 +5,8 @@
 <h4>Proceeding to payment ...</h4><hr>
 
 <ul>
-  <% @order.products.each do |order| %>
-    <li class="list_item lead"><i class="glyphicon glyphicon-ok text-success"></i> <%= order.id%></li>
+  <% @order.products.each do |product| %>
+    <li class="list_item lead"><i class="glyphicon glyphicon-ok text-success"></i> <%= product.name%></li>
   <% end %>
 </ul>
 <hr>
