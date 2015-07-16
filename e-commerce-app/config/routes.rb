@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'user/index'
 
+  get 'user/index'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   resources :orders

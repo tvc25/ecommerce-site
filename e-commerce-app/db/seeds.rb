@@ -22,8 +22,15 @@ u4 = User.create!(name: 'Roger Sterling', email: 'roger.sterling@scdp.com',passw
 ct1 = Category.create!(name: 'Electronics')
 
 # Create products objects
-p1 = Product.create(name: 'DUNHILL CHASSIS TEXTURED-LEATHER BRIEFCASE', price: 950)
-p2 = Product.create(name: 'Mac Pro', price: 20)
+p1 = Product.create(designer: 'DUNHILL',name: 'CHASSIS TEXTURED-LEATHER BRIEFCASE', image: 'http://cache.mrporter.com/prod-img/images/products/594133/594133_mrp_in_l.jpg', description:"EDITORS' NOTES
+A sleek briefcase is the surest way to make a sophisticated impression at meetings. Dunhill's handsome navy design is constructed from the label's signature 'Chassis' leather, which has been embossed to resemble carbon fibre and treated to resist scratches. The suede-lined interior is equipped with various pockets to keep you organised and has a sleeve sized to fit a laptop or tablet.", price: 950)
+p2 = Product.create(designer: 'ACNE STUDIOS',name:'JOHNA COTTON-BLEND JERSEY HOODIE
+', price: 180, description: "EDITORS' NOTES
+Acne Studios' navy hoodie is crafted from cotton-blend jersey with a comfortable looped terry interior. This style is fitted with practical pockets and a two-way zip fastening through the front. Slip it on after workout sessions or on low-key weekends.", image:'https://cache.mrporter.com/prod-img/images/products/588208/588208_mrp_in_l.jpg')
+p3 = Product.create!(designer: 'ACNE STUDIOS', name: 'ISHERWOOD SLIM-FIT COTTON-POPLIN SHIRT
+', description: "EDITORS' NOTES
+Acne Studios' popular 'Isherwood' shirt is updated in smooth, lightweight cotton-poplin. Cut for a comfortably trim fit and sharpened with a button-down collar, it's a dapper all-rounder. Wear it loose over dark denim or navy chinos.", price:160, image:'https//cache.mrporter.com/prod-img/images/products/588254/588254_mrp_in_l.jpg')
+p2 = Product.create(name: '', price: 20)
 p3 = Product.create(name: 'MacBook Air', price: 30)
 p4 = Product.create(name: 'iPhone', price: 34)
 
