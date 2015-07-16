@@ -32,13 +32,13 @@ class OrderProductsController < ApplicationController
   # GET /order_products/1
   # GET /order_products/1.json
   def show
-  #   # session[:cart] = []
-  #   if session[:cart]
-  #     @order_products = OrderProduct.find session[:cart]
-  #     @total = OrderProduct.total(@order_products)
-  # else
-  #     @order_products = []
-  #   end
+    # session[:cart] = []
+    if session[:cart]
+      @order_products = OrderProduct.find session[:cart]
+      @total = OrderProduct.total(@order_products)
+  else
+      @order_products = []
+    end
   end
 
   # GET /order_products/new
@@ -60,6 +60,7 @@ class OrderProductsController < ApplicationController
         session[:cart] ||= []
         session[:cart].push @order_product.id
 
+        count = get_cart_count
         output = {'status' => 'Item was successfully added to the cart.'}.to_json
         format.html { redirect_to @order_product, notice: 'Order product was successfully created.' }
         format.json { render :json => output }

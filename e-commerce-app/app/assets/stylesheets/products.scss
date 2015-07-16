@@ -28,6 +28,11 @@ body {
   }
 }
 
+.product-show {
+  width:75%;
+  margin:0 auto;
+}
+
 li {
   list-style-type: none;
 }
@@ -212,7 +217,7 @@ h5 {
     display:inline-block;
     margin-right: 0px;
     display: inline;
-    padding: 20px 0 0 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .right.box {

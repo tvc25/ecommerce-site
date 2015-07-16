@@ -7,7 +7,7 @@
 </div>
 
 <div class="right box-6 box">
-    <div class="product-info">
+
       <h2><%=@product.designer%></h2>
       <p><%= @product.name %></p>
       <p><strong>£<%= @product.price %></strong></p>
@@ -18,7 +18,7 @@
       <%= hidden_field_tag 'product_id', @product.id %>
       <p><%= submit_tag "Add to Cart", :class => "addToCart" %></p>
       <% end %>
-      </div>
+
 
       </div>
   
