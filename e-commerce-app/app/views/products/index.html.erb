@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
-<div class="products-container">
+<div class="products-container box-11">
   <% @products.each do |product| %>
     <div class="product-info">
       <p><%= product.name %></p>
@@ -12,9 +12,9 @@
       <%= image_tag(product.image) %>
       <%= link_to 'Show', product %>
       <%= form_tag("/order_products", method: "post") do %>
-        <%= select_tag "quantity", options_for_select((1..10).step(1)), :class => 'form-control quantity' %>
-        <%= hidden_field_tag 'product_id', product.id %>
-        <%= submit_tag "Add to Cart", :class => "addToCart" %>
+      <%= select_tag "quantity", options_for_select((1..10).step(1)), :class => 'form-control quantity' %>
+      <%= hidden_field_tag 'product_id', product.id %>
+      <%= submit_tag "Add to Cart", :class => "addToCart" %>
       <% end %>
     </div>
   <% end %>

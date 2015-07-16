@@ -16,8 +16,17 @@ class OrderProductsController < ApplicationController
   def checkout
     session[:order_id] = nil #add this to clear order_id hash everytime. fix heroku issue
     # Everytime proceed to checkout, first thing to do is to check whether the order id in the session cart{:order_id}, otherwise create a new one
-    binding.pry
-    @order = Order.first
+    @order = Order.find session[:order_id] || Order.create(:user_id => current_user.id)
+    session[:order_id] = @order.id
+    
+    @updatedPrice = calc_total_price || ''
+
+    # Associate each item in the cart with the new order id.
+    session[:cart].each do |order_product_id|
+      item = OrderProduct.find order_product_id
+      item.order_id = @order.id
+      item.save
+    end
   end
 
   # GET /order_products/1

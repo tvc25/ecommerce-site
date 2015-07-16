@@ -11,7 +11,7 @@
  * file per style scope.
  *
 */
-
+@import "normalize.scss";
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "products.scss"
+@import "products.scss";

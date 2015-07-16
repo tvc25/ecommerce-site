@@ -1,4 +1,4 @@
-div class="timer">
+<div class="timer">
     Loading...
 </div>
 <span class="lead"><b>  Checkout Page</b></span>
@@ -6,7 +6,7 @@ div class="timer">
 
 <ul>
   <% @order.products.each do |order| %>
-    <li class="list_item lead"><i class="glyphicon glyphicon-ok text-success"></i> <%= order.title %></li>
+    <li class="list_item lead"><i class="glyphicon glyphicon-ok text-success"></i> <%= order.id%></li>
   <% end %>
 </ul>
 <hr>

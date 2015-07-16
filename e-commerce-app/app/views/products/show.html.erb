@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <strong>Image:</strong>
+  <%= @product.image %>
+</p>
+
+<p>
   <strong>Tag:</strong>
   <%= @product.tag %>
 </p>
@@ -30,10 +35,6 @@
   <%= @product.description %>
 </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @product.image %>
-</p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
